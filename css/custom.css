@@ -1,0 +1,264 @@
+
+/*------NEW------ */
+
+.index{
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #cc3333;
+}
+
+/*code to controll the carousel menu we have so that it becomes well positioned and responsive */
+.carousel-menu{
+	height: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .carousel-menu{
+	height: auto;
+}
+}
+#carousel-icon{
+	padding-top: 60%;
+	
+}
+
+@media screen and (max-width: 960px) {
+	
+	#carousel-icon{
+	margin-top: 550%;
+	
+}
+}
+/*here ends the code to the carousel menu*/
+
+/*The background picture on the "Om Oss" section*/
+.about {
+  background-image: url("../img/Background_TEXTURE.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* makes the picture stay in a fixed position*/
+  background-size: cover;
+}
+
+/*code for the "OBS" text in the "om oss" section*/
+.OBS{
+	color: #000;
+	font-size: 15px;
+}
+
+/* Makes the "OBS" text responsive*/
+@media screen and (max-width: 960px) {
+   .OBS{
+	color: #44dc1b;
+	font-size: 13px;
+}
+}
+
+
+/*Code for the portofolio divs/menu we have in "Mat and Mat2.html" page*/
+#matportfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+ 
+}
+
+#matportfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#matportfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: #cc3333;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#matportfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 0.7;
+}
+#matportfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#matportfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#matportfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#matportfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#matportfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#matportfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#matportfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#matportfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #matportfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/*Here ends the code for the portfolios in "Mat and Mat2.html" page*/
+
+/*positions the pictures inside our Carousel*/
+.carousel-pic{
+  margin: 0 0 15px;
+  right: 0;
+  padding-top: 5%;
+}
+
+/*What happens when we hover over the carousel pictures*/
+.carousel-pic:hover {
+  opacity: 0.7;
+  background: #003333;
+}
+
+/*sets color and font size*/
+.text-muted2 {
+	color: #fff;
+	font-size: 17px;
+	
+}
+ /*Positioning the "vad Ligger Buddy's" button*/
+.buddys-loc{
+	padding-left: 15px;
+}
+ /*Makes the "vad Ligger Buddy's" button responsive */
+@media screen and (max-width: 960px) {
+  .buddys-loc{
+	padding-left: 10%;
+	padding-top: 10%;
+} 
+}
+/*Css kod till de bilder som finns i bakrunden*/
+section.module:last-child {
+  margin-bottom: 0;
+}
+/*h2 texts in the parralax*/
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+
+/*code for the paragraphs found in the module*/
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+section.module.mat-parallax {
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+section.module.parallax h1 {
+  color: #ccff66;
+  font-size: 40px;
+  line-height: 150px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+section.module.parallax-1 {
+  background-image: url("../img/header-bg.jpg");
+}
+
+section.module.parallax-4 {
+  background-image: url("../img/drycker-bg.jpg");
+}
+
+@media screen and (max-width: 960px) {
+  section.module.parallax {
+  width: 100%;
+  height: 300px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: #ccff66;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
+  
+}
+
+/*Makes the texts and paragraphs in the parallax responsive*/
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+	line-height: 80%;
+	color: #ccff66;
+  }
+}
+
+/*Här slutar koden till bakrundens bilderna som finns på index.html*/
+
+.index {
+  background-color: #cc3333;
+}
+
+.ingredienser {
+	padding-left: 10%;
+}
+/* -- */
