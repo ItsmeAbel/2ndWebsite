@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<!--lägger in en php fil-->
+<?php
+  include ('Kontakta_oss.php');
+?>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Buddys Restaurang & Pub">
+    <meta name="author" content="Abel Kenna">
+
+    <title>Buddy's City</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="icon" type="image/png" href="img/Buddys_icon.png" />
+	
+</head>
+ 
+<body id="page-top" class="index">
+    <!-- Här skapar vi vår Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Buddy's</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#services">Rekomenderad menyer</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Mat & Drycker</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Om Oss</a>
+                    </li>
+                   <li>
+                        <a class="page-scroll" href="#team">Kontakta oss</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <!--Här skapar vi en header som innehåller bilden och texten längst upp på första sidan/Home -->
+	<header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading animated slideInLeft">Välkommen till Buddys!</div>
+                <a href="#services" class="page-scroll btn btn-xl animated zoomInLeft">Fortsätt vidare</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Här skapar vi en Section som innhåller Rekomenderad menyer delen -->
+    <section id="services" class="carousel-menu">
+			<!-- skapar en gemensam div som innhåller all text och billder innuti-->
+        <div class="container">
+			<div class="container">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				 
+				  <!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					
+						
+					<div class="item active">
+						<div class="col-md-4">
+							<img href="#portfolioModal1" src="img/Mat/Menu1.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">BBQ Ribs</h4>
+							<h3 class="service-heading">145:-</h3>
+						</div>
+						<div class="col-md-4">
+							<img href="#portfolioModal2" src="img/Mat/Menu2.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">FalafelTallrik </h4>
+							<h3 class="service-heading">80:-</h3>
+						</div>
+						<div class="col-md-4">
+							<img href="#portfolioModal3" src="img/Mat/Menu3.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">Pasta</h4>
+							<h3 class="service-heading">99:-</h3>
+						</div>
+					</div>
+						
+					<div class="item">
+					  <div class="item active">
+					  <div class="col-md-4">
+								<img href="#portfolioModal1" src="img/Mat/Ham1.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">Chevy Cheese 150g</h4>
+							<h3 class="service-heading">89:-</h3>
+						</div>
+						<div class="col-md-4">
+								<img href="#portfolioModal1" src="img/Mat/Ham2.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">Cheese & Bacon 150g</h4>
+							<h3 class="service-heading">89:-</h3>
+						</div>
+						<div class="col-md-4">
+								<img href="#portfolioModal1" src="img/Mat/Ham3.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading"> Hot Cheese & Bacon 150g</h4>
+							<h3 class="service-heading">89:-</h3>
+						</div>
+					</div>
+					</div>
+					<div class="item">
+					  <div class="item active">
+					  <div class="col-md-4">
+								<img href="#portfolioModal1" src="img/Mat/Menu4.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">Chicky Bits</h4>
+							<h3 class="service-heading">75:-</h3>
+						</div>
+						<div class="col-md-4">
+								<img href="#portfolioModal1" src="img/Mat/Menu5.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">Barn Meny</h4>
+							<h3 class="service-heading">55:-</h3>
+						</div>
+						<div class="col-md-4">
+								<img href="#portfolioModal1" src="img/Mat/Menu3.jpg" class="img-responsive carousel-pic" alt="" data-toggle="modal">
+							<h4 class="service-heading">Buddy's Pasta</h4>
+							<h3 class="service-heading">99:-</h3>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+				 
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span id="carousel-icon" class="fa fa-chevron-circle-left fa-4x" aria-hidden="true"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span id="carousel-icon" class="fa fa-chevron-circle-right fa-4x" aria-hidden="true"></span>
+				  </a>
+				</div> <!-- Carousel -->	
+			</div>
+        </div>
+    </section>
+<!-- Här slutar koden till rekomenderad Menyer delen av webbsidan-->
+		 
+		 <!--Koden till parallex bilden som finns på bakrunden-->
+		<section class="module parallax parallax-1">
+					  <div class="container">
+						<h1>Mat & Drycker</h1>
+					  </div>
+		</section>
+		
+    <!-- Portfolio Grid Section. Här skapar vi en sektion för Mat och Drycker delen av webbsidan -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">MatRätter</h2>
+                    <h3 class="section-subheading text-muted">Med världens bästa smak och kvalité!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-arrows fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <img src="img/Mat/Menu1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h3>BBQ Ribs</h3>
+						<h4>145:- </h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-arrows fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <img src="img/Mat/Menu2.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h3>FalafelTallrik</h3>
+						<h4>80:-</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-arrows fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <img src="img/Mat/Menu3.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h3>Pasta</h3>
+						<h4>99:-</h4>
+                    </div>
+                </div>
+			</div>
+				<!-- Skapar visa merknappen -->
+				<div class="intro-text">
+					<a href="Mat.html" class="btn btn-xl">Visa mer...</a>
+				</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+			<!--Den delen av mat & drycker som innehåller drycker delen-->
+			<div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Drycker</h2>
+                    <h3 class="section-subheading text-muted">med världens bästa smak och kvalité!</h3>
+                </div>
+            </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-arrows fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/Motorhead-Whisky.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h3>sourz apple</h3>
+						<h4>90:-</h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-arrows fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <img src="img/Mat/gallo_family.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h3>Gallo Family</h3>
+						<h4>210:- </h4>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-arrows fa-3x" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <img src="img/Mat/chill_out.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h3>Chill Out</h3>
+						<h4>110:-</h4>
+                    </div>
+                </div>
+            </div>
+			<div class="intro-text">
+                <a href="Drycker.html" class="btn btn-xl">Visa mer...</a>
+            </div>
+        </div>
+    </section>
+			
+		<!--Koden till parallex bilden som finns på bakrunden-->
+		<section class="module parallax parallax-1">
+			 <div class="container">
+				<h1>Om Oss</h1>
+			 </div>
+		</section>
+		
+    <!-- The "Om Oss" section starts here -->
+    <section id="about" class="about">
+        <div class="container">
+		<!--//new a div that holds the title for "om oss" section-->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Vad som gör oss unika!</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="subheading">Elvis Presley, Johnny Cash</h4>
+                                    <h4 class="subheading">Marilyn Monroe</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted2">Hem för Rock and roll, pop, blues och flera andra </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                   
+                                    <h4>Sallad Buffé!</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted2">En buffé fullt med olika Grönsaker, Frukter, Dressing och mycket mer...</br>
+									Grattis Buffé ingår vid beställning av maträtter!  </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Pub</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted2">En pub där du kan dricka bort dina stress med några av de bästa dryckerna i hela världen!</p>
+                                </div>
+								<h4 class="OBS"><font color="#44dc1b">OBS:</font> Du måste vara över 21 och ha med dig en giltig legitimation!</h4>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Casino</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted2">Vi har spelmaskiner där du kan spela Casino spel såsom Mighty Miner, Xanadu, Treasure Hunt och flera andra.
+									</p>
+                                </div>
+								<h4 class="OBS"><font color="#44dc1b">OBS:</font> Du måste vara över 20 och ha med dig en giltig legitimation!</h4>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Kom
+                                    <br>och käka 
+                                    <br>med oss!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+				<div class="buddys-loc">
+					<a href="OmOss.html" class="btn btn-xl">Vad ligger Buddy's?</a>
+				</div>
+            </div>
+			
+        </div>
+		
+    </section>
+	<!--Koden till parallex bilden som finns på bakrunden-->
+	<section class="module mat-parallax parallax-1">
+			  
+	</section>
+
+    <!-- Den sektion av webbsidan som innehåller "Vår fantastika chefer" -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading ">Kontakta Oss</h2>
+                </div>
+            </div>
+            <div class="row">
+               
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Rani Hani</h4>
+                        <p class="text-muted2">Huvudansvarig på Buddy's</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Abel Kenea</h4>
+                        <p class="text-muted2">Webbutvecklare</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.facebook.com/abel.getachew.965"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 class="text-muted2">Kontakta oss gärna ifall du har någon fråga!</h3>
+					<div class="intro-text">
+						<a href="#contact" data-toggle="modal" class="btn btn-xl">Kontakta oss</a>
+					</div>
+                </div>
+				
+            </div>
+        </div>
+    </section>
+    
+       <!--Koden till parallex bilden som finns på bakrunden-->
+		<section class="module mat-parallax parallax-1">
+					  
+		</section>
+		<!--Vad som ska finnas längst ner på webbbsidan-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Buddy's City 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/pages/Buddys-City/174567569232696"><i class="fa fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+<!--Vad som händer när man klickar på bilderna som finns på Mat & Dricker sektionen -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade animated zoomIn" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Lägger in några detalier -->
+                            <h2>BBQ Ribs</h2>
+                            <img class="img-responsive img-centered" src="img/Mat/Menu1.jpg" alt="">
+                            <p><b>Ingredienser:</b> Nötkött, Pommes Frites eller KlyftPotatis, och Dressing på ditt val.  
+							</p>
+                            <p>Pris: 145 kr.</p>
+						
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade animated zoomIn" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Lägger in några detalier -->
+                            <h2>FalafelTallrik</h2>
+                            <img class="img-responsive img-centered" src="img/Mat/Menu2.jpg" alt="">
+                            <p><b>Ingredienser:</b> Falafel, Pommes Frites, Sallad och Dressing på ditt val.  
+							</p>
+                            <p>Pris: 80 kr.</p>
+						
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade animated zoomIn" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Lägger in några detalier -->
+                            <h2>Pasta</h2>
+                            <img class="img-responsive img-centered" src="img/Mat/Menu3.jpg" alt="">
+                            <p><b>Ingredienser:</b> Pasta och Dressing på ditt val. </br>
+								<i>Du kan välja mellan Kyckling, Fläsk eller Oxfilé som ska ingå med Pastan.</i>
+							</p>
+                            <p>Pris: 99 kr.</p>
+						
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade animated zoomIn" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Lägger in några detalier -->
+                            <h2>Sourz Apple</h2>
+                            <img class="img-responsive img-centered" src="img/portfolio/Motorhead-Whisky.jpg" alt="">
+							<p><b>Pris:</b> 90 kr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade animated zoomIn" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Lägger in några detalier -->
+                            <h2>Gallo Family</h2>
+							<p class="item-intro text-muted">Vin</p>
+                            <img class="img-responsive img-centered" src="img/Mat/gallo_family.jpg" alt="">
+                            <p><b>Pris:</b> 210 kr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade animated zoomIn" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Chill Out</h2>
+                            <p class="item-intro text-muted">Alkohol fri vin.</p>
+                            <img class="img-responsive img-centered" src="img/Mat/chill_out.jpg" alt="">
+                            <p><b>Pris:</b> 110 kr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Här slutar koden till de klickbära bilder som finns i Mat & Drycker sektionen -->
+
+<!-- Vad som vissas när man klickar på kontakta oss knappen-->
+	<section class="modal fade" id="contact" role="dialog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Kontakta oss</h2>
+                    <h3 class="section-subheading text-muted">Vi lovar att vi använder ditt information endast för att kontakta dig.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ditt namn *" id="name" required data-validation-required-message="Du måste lägga in ditt namn.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Din Email *" id="email" required data-validation-required-message="Lägg in ditt mail adress.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Ditt mobil nummer *" id="phone" required data-validation-required-message="Lägg in ditt mobilnummer">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Vad har du för medelande? *" id="message" required data-validation-required-message="Lägg in ditt medelande."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Skicka</button>
+								<button class="btn btn-xl" data-dismiss="modal">Stäng</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Buddys Restaurang & Pub</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="icon" type="image/png" href="img/Buddys_icon.png" />
+</head>
+
+<body id="page-top" class="index about">
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+				<a class="navbar-brand page-scroll" href="index.html">Buddys Home</a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+	<!-- google map -->
+	<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+<!-- a script for a google map which adds a marker on specific location -->
+<script>
+var myCenter=new google.maps.LatLng(60.675961, 17.144443);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:18,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Här finns vi!"
+  });
+
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+    <div id="googleMap" style="width:100%;height:400px;">
+	</div>
+	<!-- /new google map ends here -->
+
+	
+	<div class="container">
+        <div class="row">
+			<div id="map-outer" class="col-md-12">
+				<div id="address" class="col-md-4">
+					<h2 class="text-muted2">Our Location</h2>
+					<address class="text-muted2">
+						<strong>Buddys Restaurang & Pub</strong><br><br>
+							Nygatan 31<br>
+							803 11<br>
+							Gävle,Sverige.<br>
+							<abbr>Loc:</abbr> 60.675961, 17.144443
+					</address>
+				</div>
+				<div id="map-container" class="col-md-8"></div>
+			</div><!-- /map-outer -->
+        </div> <!-- /row -->
+    </div>
+	
+	
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright text-muted2">Copyright &copy; Buddy's City 2016.</span>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+	
+</body>
+</html>
